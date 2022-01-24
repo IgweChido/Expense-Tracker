@@ -1,38 +1,202 @@
-.App {
+*{
+	box-sizing: border-box;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+.App{
+  display: block;
+  margin: auto;
+  width: 400px;
+  /* border: 1px solid blueviolet; */
+}
+
+h3{
+  margin-bottom: 5px;
+}
+h2{
+  
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+.container1{
+  /* border: 1px solid yellow; */
+  
+}
+/* ************* balance Component styles********** */
+
+
+.balance{
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+  
+}
+.balword{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.balnum{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.con1box{
+  background-color: white;
+  /* box-shadow: ; */
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.income{
+  width: 49.8%;
+  display: inline-block;
+  border: 1px solid transparent;
+  height: 100%;
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+}
+.vertline{
+  background-color: grey;
+  display: inline-block;
+  float: left;
+  height: 80px;
+  width: 1px;
+  margin-top: 10px;
+  
+}
+
+.expense{
+  height: 100%;
+  width: 49.8%;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+
+.inword{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.innum, .expnum{
+  font-weight: 600;
+}
+
+.innum{
+  color: rgb(53, 243, 53);
+}
+
+.expnum{
+  color: red;
+}
+
+
+
+/* ************* History Tran Component styles********** */
+
+.historycon{
+  /* border: 1px solid salmon; */
+}
+
+.tranhistory{
+  /* border: 1px solid green; */
+  
+  
+  
+}
+
+.plusmoney{
+  /* border: 1px solid peru; */
+  height: 40px;
+  background-color: rgb(53, 243, 53);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.minusmoney{
+   /* border: 1px solid peru; */
+   height: 40px;
+   background-color: red;
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.money{
+  /* border: 1px solid peru; */
+  height: 40px;
+  width: 90%;
+  background-color: white;
+  width: 98%;
+  padding: 10px;
+  position: relative;
+  
+}
+
+.mword{
+  position: absolute;
+  right: 10px;
+}
+
+
+
+.xbtn {
+  font-weight: 600;
   color: white;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  margin-left:-20px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* ************* Add Tran Component styles********** */
+
+label{
+  display:block;
+  margin: 15px 0 0;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=text]{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0 ;
+  border: none
+}
+
+
+
+.Addbtn{
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 ;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
